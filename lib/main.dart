@@ -16,8 +16,9 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.lightGreen,
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/ojasvii.jpeg'),
+        child: ElevatedButton(
+          onPressed: () {},
+          child: Text('click me'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
