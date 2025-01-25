@@ -22,23 +22,35 @@ class Home extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Text('hello'),
-              Text('world'),
+              Expanded(
+                  flex: 1,
+                  child: Image.asset('assets/ojasvii.jpg')
+              ),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.yellowAccent,
+                  child: Text('1'),
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.green,
+                  child: Text('2'),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  color: Colors.pinkAccent,
+                  child: Text('3'),
+                ),
+              ),
             ],
-          ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
-          ),Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.red,
-            child: Text('two'),
-          ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.yellowAccent,
-            child: Text('three'),
           )
         ],
       ),
